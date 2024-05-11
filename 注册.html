@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>zhuce</title>
+    <style type="text/css">
+        body {
+            overflow-x: hidden;
+        }
+
+        /*pokemmo图标*/
+        .pokemmo1 {
+            position: relative;
+            left: 350px;
+            width: 200px;
+            bottom: 75px;
+        }
+
+        /*导航栏*/
+        .biaoqian {
+            width: 45%;
+            height: 70px;
+            position: relative;
+            left: 700px;
+            bottom: 145px;
+        }
+
+        /*无序列表*/
+        ul li {
+            list-style: none;
+        }
+
+        /*排列距离*/
+        .d {
+            margin-left: 70px;
+        }
+
+        /*一级菜单位置及其中字体属性*/
+        ul li a {
+            width: 60px;
+            margin-right: 0px;
+            height: 55px;
+            float: left;
+            line-height: 55px;
+            font-size: 30px;
+            font-style: 黑体;
+            color: white;
+            text-decoration: none;
+            text-shadow: 1px 1px 2px #244a7a;
+        }
+
+        /*鼠标触碰变色*/
+        ul li a:hover {
+            background-color: rgb(21, 105, 138);
+        }
+
+        /*大图背景*/
+        .beijing {
+            position: absolute;
+            margin-top: -120px;
+        }
+
+        /*语言导航栏*/
+        .language {
+            position: absolute;
+            margin-top: -210px;
+            margin-left: 1500px;
+            width: 100px;
+            height: 60px;
+        }
+
+        /*ul列表属性*/
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+        }
+
+        /*二级菜单位置*/
+        ul li ul {
+            position: relative;
+            display: none;
+        }
+
+        /*鼠标触碰二级菜单变色*/
+        ul li:hover ul {
+            display: block;
+        }
+
+        /*语言文字位置*/
+        .a {
+            margin-bottom: -5px;
+            margin-right: 8px;
+        }
+
+        /*语言文字位置*/
+        .b {
+            margin-bottom: -5px;
+            margin-right: 5px;
+        }
+
+        .wenmo {
+            position: absolute;
+            margin-top: 1600px;
+            width: 100%;
+            height: "100px";
+        }
+
+        .fangwei {
+            position: absolute;
+            height: 70px;
+            width: 500px;
+            margin-top: 1620px;
+            margin-left: 350px;
+        }
+
+        .nianfeng {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            line-height: 22px;
+            text-decoration: none;
+            text-shadow: 1px 1px 1px #a75a00;
+        }
+
+        .falv {
+            position: absolute;
+            margin-top: 1610px;
+            margin-left: 850px;
+            text-align: right;
+            color: aqua;
+        }
+
+        .shejiao {
+            position: absolute;
+            margin-top: 1620px;
+            margin-left: 1350px;
+        }
+
+        .tu {
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 350px;
+        }
+
+        .zhuce {
+            position: absolute;
+            margin-left: 300px;
+            margin-top: 700px;
+        }
+
+        .zhanghu {
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+            text-shadow: 1px 1px 2px #244a7a;
+        }
+
+        label {
+            width: 140px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .ziti {
+            font: 24px Dosis, sans-serif;
+            color: #ffff;
+        }
+
+        .shurukuang {
+            border-radius: 7px;
+            width: 230px;
+            height: 30px;
+        }
+
+        .yanzhengma {
+            position: absolute;
+            margin-left: 150px;
+        }
+
+        .checkbox {
+            position: absolute;
+            margin-top: 108px;
+            margin-left: 150px;
+        }
+
+        .dingyue {
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 170px;
+            color: white;
+            font-size: large;
+        }
+
+        .buttonstyle {
+            border-radius: 6px;
+        }
+
+        .button1 {
+            background-color: #ff900b;
+            width: 70px;
+            height: 60px;
+            position: absolute;
+            margin-top: 480px;
+            margin-left: 150px;
+            top: 20px;
+            left: 0px;
+            color: white;
+            font-size: 25px;
+            font-weight: 600;
+            color: white;
+            text-shadow: 1px 1px 2px #244a7a;
+        }
+
+        .jiaoyan {
+            background-color: #ff900b;
+            width: 100px;
+            height: 30px;
+            font-size: 17px;
+            font-weight: 600;
+            color: white;
+            text-shadow: 1px 1px 2px #244a7a;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oTxt = document.getElementById("txt");
+            var oBtn = document.getElementById("btn");
+            oBtn.onclick = function () {
+                var re = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+                if (re.test(oTxt.value)) {
+                    alert("你写对了");
+                }
+                else {
+                    alert("你写错了");
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <img src="1.png" width="2300px" height="100px">
+    <div class="pokemmo1"><img src="pokemmo1.png"></div>
+    <div class="biaoqian">
+        <ul>
+            <li>
+                <a href="dazuoye.html" class="d">首页</a>
+                <a href="资料.html" class="d">资料</a>
+                <a href="注册.html" class="d">账号</a>
+                <a href="https://forums.pokemmo.com/" class="d">论坛</a>
+            </li>
+        </ul>
+    </div>
+    <div class="beijing"><img src="2.jpg" width=100% height="1800px"></div>
+    <div class="language">
+        <ul>
+            <li><a href="#" style="font-size:medium; margin-left: 40px; width: 160px;"><img src=a.png width="20px"
+                        height="20px" class="b">简体中文</a>
+                <ul>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=b.png width="20px" height="20px"
+                                class="b">English</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=c.png width="20px" height="20px"
+                                class="b">Filipino</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=d.png width="20px" height="20px"
+                                class="b">Français</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=e.png width="20px" height="20px"
+                                class="b">Espanol</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=f.png width="20px" height="20px"
+                                class="b">Deutsch</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=g.png width="20px" height="20px"
+                                class="b">ltaliano</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=h.png width="20px" height="20px"
+                                class="a">Portugue(PT)</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=i.png width="20px" height="20px"
+                                class="a">Portugue(BR)</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=j.png width="20px" height="20px"
+                                class="b">Polski</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=k.png width="20px" height="20px"
+                                class="b">한국어</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=l.png width="20px" height="20px"
+                                class="b">日本語</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=m.png width="20px" height="20px"
+                                class="b">简体中文</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=n.png width="20px" height="20px"
+                                class="b">簡體中文</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="wenmo"><img src="1.png" width=100% height="100px"></div>
+    <div class="fangwei">
+        <a class="nianfeng">© 2022 版权所有。</a><br><br><img src="pokemmo1.png" width="200px" height="30px">
+    </div>
+    <a class="falv">视频政策 | 隐私政策 | 行为准则<br>
+        使用此网站即表示您同意接受使用条款<br>
+        PokeMMO不附属或与其他任何公司相关。<br>
+        在此所使用的所有LOGO、商标和商品名均为他们各自的所有者所有。</a>
+    <div class="shejiao"><img src="10.png" width="450px" height="70px"></div>
+    <div class="tu"><img src="11.png" width="1200px" height="650px"></div>
+    <div class="zhuce"><a class="zhanghu">创建新账户</a><br><br>
+        <form action="http://localhost:3000/register" method="post">
+            <label class="ziti">用户名：</label>
+            <input class="shurukuang" type=" text" size="120" autofocus /><br /><br />
+            <label class="ziti">邮箱：</label>
+            <input class="shurukuang" type="text" id="txt">
+            <input class="jiaoyan buttonstyle" type="button" id="btn" value="校验"><br /><br />
+            <label class="ziti">密码：</label>
+            <input class="shurukuang" type="text" size="120" maxlength="6" /><br /><br />
+            <label class="ziti">确认密码：</label>
+            <input class="shurukuang" type="text" size="120" maxlength="6" /><br /><br />
+            <label class="ziti">验证码：</label>
+            <input class="shurukuang" type="text" size="120" maxlength="6" /><br /><br />
+            <img class="yanzhengma" src="12.jpg">
+            <input class="checkbox" type="checkbox" /><a class="dingyue">订阅 PokeMMO 的邮件。</a>
+            <button class="buttonstyle button1" type="submit">注册</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    <style type="text/css">
+        body {
+            overflow-x: hidden;
+        }
+
+        /*pokemmo图标*/
+        .pokemmo1 {
+            position: relative;
+            left: 350px;
+            width: 200px;
+            bottom: 75px;
+        }
+
+        /*导航栏*/
+        .biaoqian {
+            width: 45%;
+            height: 70px;
+            position: relative;
+            left: 700px;
+            bottom: 145px;
+        }
+
+        /*无序列表*/
+        ul li {
+            list-style: none;
+        }
+
+        /*排列距离*/
+        .d {
+            margin-left: 70px;
+        }
+
+        /*一级菜单位置及其中字体属性*/
+        ul li a {
+            width: 60px;
+            margin-right: 0px;
+            height: 55px;
+            float: left;
+            line-height: 55px;
+            font-size: 30px;
+            font-style: 黑体;
+            color: white;
+            text-decoration: none;
+            text-shadow: 1px 1px 2px #244a7a;
+        }
+
+        /*鼠标触碰变色*/
+        ul li a:hover {
+            background-color: rgb(21, 105, 138);
+        }
+
+        /*大图背景*/
+        .beijing {
+            position: absolute;
+            margin-top: -120px;
+        }
+
+        /*语言导航栏*/
+        .language {
+            position: absolute;
+            margin-top: -210px;
+            margin-left: 1500px;
+            width: 100px;
+            height: 60px;
+        }
+
+        /*ul列表属性*/
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+        }
+
+        /*二级菜单位置*/
+        ul li ul {
+            position: relative;
+            display: none;
+        }
+
+        /*鼠标触碰二级菜单变色*/
+        ul li:hover ul {
+            display: block;
+        }
+
+        /*语言文字位置*/
+        .a {
+            margin-bottom: -5px;
+            margin-right: 8px;
+        }
+
+        /*语言文字位置*/
+        .b {
+            margin-bottom: -5px;
+            margin-right: 5px;
+        }
+
+        .wenmo {
+            position: absolute;
+            margin-top: 1600px;
+            width: 100%;
+            height: "100px";
+        }
+
+        .fangwei {
+            position: absolute;
+            height: 70px;
+            width: 500px;
+            margin-top: 1620px;
+            margin-left: 350px;
+        }
+
+        .nianfeng {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            line-height: 22px;
+            text-decoration: none;
+            text-shadow: 1px 1px 1px #a75a00;
+        }
+
+        .falv {
+            position: absolute;
+            margin-top: 1610px;
+            margin-left: 850px;
+            text-align: right;
+            color: aqua;
+        }
+
+        .shejiao {
+            position: absolute;
+            margin-top: 1620px;
+            margin-left: 1350px;
+        }
+
+        .guandu {
+            position: relative;
+            float: left;
+            top: -60px;
+            left: 20px;
+            width: 600px;
+            height: 1600px;
+        }
+
+        .dazi {
+            color: #f1eb6c;
+            font-weight: 700;
+            font-size: 25px;
+            text-decoration: none;
+        }
+
+        .gaishu {
+            border-radius: 6px;
+            border: 1px solid rgb(0, 0, 0, 0.5);
+            width: 400px;
+            height: 160px;
+            position: relative;
+            left: 180px;
+            top: -160px;
+            color: #7090b7;
+        }
+
+        .zhengti {
+            width: 600px;
+            height: 180px;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid rgb(180, 180, 180);
+        }
+
+        tr {
+            height: 70px;
+            text-align: center;
+        }
+
+        td:hover {
+            background-color: rgb(218, 216, 216);
+        }
+
+        .m {
+            width: 100px;
+        }
+
+        .n {
+            width: 250px;
+        }
+    </style>
+    <title>资料</title>
+</head>
+
+<body>
+    <img src="1.png" width="2300px" height="100px">
+    <div class="pokemmo1"><img src="pokemmo1.png"></div>
+    <div class="biaoqian">
+        <ul>
+            <li>
+                <a href="dazuoye.html" class="d">首页</a>
+                <a href="资料.html" class="d">资料</a>
+                <a href="注册.html" class="d">账号</a>
+                <a href="https://forums.pokemmo.com/" class="d">论坛</a>
+            </li>
+        </ul>
+    </div>
+    <div class="beijing"><img src="2.jpg" width=100% height="1800px"></div>
+    <div class="language">
+        <ul>
+            <li><a href="#" style="font-size:medium; margin-left: 40px; width: 160px;"><img src=a.png width="20px"
+                        height="20px" class="b">简体中文</a>
+                <ul>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=b.png width="20px" height="20px"
+                                class="b">English</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=c.png width="20px" height="20px"
+                                class="b">Filipino</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=d.png width="20px" height="20px"
+                                class="b">Français</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=e.png width="20px" height="20px"
+                                class="b">Espanol</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=f.png width="20px" height="20px"
+                                class="b">Deutsch</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=g.png width="20px" height="20px"
+                                class="b">ltaliano</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=h.png width="20px" height="20px"
+                                class="a">Portugue(PT)</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=i.png width="20px" height="20px"
+                                class="a">Portugue(BR)</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=j.png width="20px" height="20px"
+                                class="b">Polski</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=k.png width="20px" height="20px"
+                                class="b">한국어</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=l.png width="20px" height="20px"
+                                class="b">日本語</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=m.png width="20px" height="20px"
+                                class="b">简体中文</a></li>
+                    <li><a href="#" style="font-size:medium; width: 160px;"><img src=n.png width="20px" height="20px"
+                                class="b">簡體中文</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="wenmo"><img src="1.png" width=100% height="100px"></div>
+    <div class="fangwei">
+        <a class="nianfeng">© 2022 版权所有。</a><br><br><img src="pokemmo1.png" width="200px" height="30px">
+    </div>
+    <a class="falv">视频政策 | 隐私政策 | 行为准则<br>
+        使用此网站即表示您同意接受使用条款<br>
+        PokeMMO不附属或与其他任何公司相关。<br>
+        在此所使用的所有LOGO、商标和商品名均为他们各自的所有者所有。</a>
+    <div class="shejiao"><img src="10.png" width="450px" height="70px"></div>
+    <div class="guandu"><a class="dazi">关都</a><br>
+        <div class="zhengti">
+            <img src="1.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                妙蛙种子是一种四足的宝可梦，外表类似蟾蜍。它有着鲜红色的眼睛，白色的瞳孔和巩膜，头顶上长着一对凸起的耳朵。它的鼻子短而钝，且有一张大嘴。当它的嘴巴张开时，可以看到上颚的一对小而尖的牙齿。它的皮肤呈蓝绿色，并附有深绿色的斑纹。它每条粗腿的脚掌上都分出三趾，且末端都长有白色的小爪子。据说在它出生的时候，背上就种有一个会和它身体一同成长的神奇种子。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="2.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                小火龙的身体呈橙色，肚子和尾巴下方是奶油色的，尾巴上有燃烧的火焰。它的眼睛呈蓝色，四颗小小的牙齿分立在上下颚。它四肢短小，有四根极短的手指和三根脚爪。小火龙生下来的时候，尾巴上就有火焰在燃烧。尾巴上的火焰是小火龙生命力的象征，如果精神不错，火焰就会熊熊燃烧。如果干劲不足，火焰就会变得微弱。火焰熄灭时，它的生命也会结束。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="3.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                杰尼龟有一双紫红色的大眼睛，四肢均为三趾，尾巴呈小型波浪状。杰尼龟的身体呈浅蓝色，被坚硬的龟壳包裹，龟壳背部为褐色，腹部为浅黄色，两者之间有着白色的波浪型边缘。杰尼龟出生后需要一段时间才会变硬的龟甲相当柔软，十分富有弹性，仿佛吹弹可破似的。即使用指头按压，放开后也能马上恢复原状。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="4.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                巴大蝶在蝴蝶的外型基础上加上了拟人化的外貌特征。巴大蝶的身体呈深蓝紫色，身后长着有黑色脉纹的巨大白色翅膀，雌性的下部翅膀中间有黑色斑点。与真实存在的昆虫不同，巴大蝶只有四条腿，而且还是粉青色的。另外它的头部还有一个同样是粉青色的，类似于鼻子的器官。巴大蝶有一对复眼，眼睛是淡红色的，仔细观察那对大眼睛的话，会发现其实是许许多多小眼睛聚集在一起形成的。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="5.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                大比鸟的体型更加庞大，翼展较宽，粉色的爪子较短。它羽毛主要是褐色的，它有着靓丽的羽毛，身体大部分羽毛是奶油色的，眼边是黑色的。头顶的羽毛两边红中间黄，扇形的尾羽是红色的。超级大比鸟拥有了更大的体型以及更宽更长的双翼。原本奶油色的羽毛变成了纯白色，尾巴末端和翅膀末端的羽毛染上了蓝色。眼珠变成了红色，瞳仁是白色的。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="6.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                皮卡丘是一只电气鼠，全身的皮毛都是黄色的，背上有两条褐色的条纹，尾巴是像锯齿状的闪电，与身体相接的部分也有一片褐色的皮毛。它有小小的嘴巴，以及黑色的眼睛，脸颊上有着红色的电力袋，长长的耳朵尖端是黑色的。它的前爪短而粗，有五趾，后爪则只有三趾。越是能制造出强大电流的皮卡丘，脸颊上的囊就越柔软，同时也越有伸展性。
+            </div>
+        </div><br><br>
+        <table border="1" align="center">
+            <tr style="text-align:center ; background-color: rgb(26, 179, 64); height: 20px;">
+                <td class="m">编号</td>
+                <td class="n">宝可梦名称</td>
+                <td class="n">属性</td>
+                <td class="m">HP</td>
+                <td class="m">攻击</td>
+                <td class="m">防御</td>
+                <td class="m">特攻</td>
+                <td class="m">特防</td>
+                <td class="m">速度</td>
+                <td class="m">共和</td>
+            </tr>
+            <tr>
+                <td class="m">#1</td>
+                <td class="n">妙蛙种子</td>
+                <td class="n">草/毒</td>
+                <td class="m">45</td>
+                <td class="m">49</td>
+                <td class="m">49</td>
+                <td class="m">65</td>
+                <td class="m">65</td>
+                <td class="m">45</td>
+                <td class="m">318</td>
+            </tr>
+            <tr>
+                <td class="m">#2</td>
+                <td class="n">小火龙</td>
+                <td class="n">火</td>
+                <td class="m">39</td>
+                <td class="m">52</td>
+                <td class="m">43</td>
+                <td class="m">60</td>
+                <td class="m">50</td>
+                <td class="m">65</td>
+                <td class="m">309</td>
+            </tr>
+            <tr>
+                <td class="m">#3</td>
+                <td class="n">杰尼龟</td>
+                <td class="n">水</td>
+                <td class="m">44</td>
+                <td class="m">48</td>
+                <td class="m">65</td>
+                <td class="m">50</td>
+                <td class="m">64</td>
+                <td class="m">43</td>
+                <td class="m">314</td>
+            </tr>
+            <tr>
+                <td class="m">#4</td>
+                <td class="n">巴大蝶</td>
+                <td class="n">飞行/虫</td>
+                <td class="m">60</td>
+                <td class="m">45</td>
+                <td class="m">50</td>
+                <td class="m">90</td>
+                <td class="m">80</td>
+                <td class="m">70</td>
+                <td class="m">395</td>
+            </tr>
+            <tr>
+                <td class="m">#5</td>
+                <td class="n">大比鸟</td>
+                <td class="n">飞行/一般</td>
+                <td class="m">83</td>
+                <td class="m">80</td>
+                <td class="m">75</td>
+                <td class="m">70</td>
+                <td class="m">70</td>
+                <td class="m">101</td>
+                <td class="m">479</td>
+            </tr>
+            <tr>
+                <td class="m">#6</td>
+                <td class="n">皮卡丘</td>
+                <td class="n">电</td>
+                <td class="m">35</td>
+                <td class="m">55</td>
+                <td class="m">40</td>
+                <td class="m">50</td>
+                <td class="m">50</td>
+                <td class="m">90</td>
+                <td class="m">320</td>
+            </tr>
+        </table>
+    </div>
+    <div class="guandu"><a class="dazi">合众</a><br>
+        <div class="zhengti">
+            <img src="7.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                藤藤蛇是蛇形的宝可梦。它身体的大部分都是绿色的，但还有腹部和脚却是奶油色。它的背上直到尾巴有一条黄色的条纹。它的眼睛周围也有黄色的部分。脖子旁的黄色部分就像小翅膀一样，从身后看则像一个百合花饰。尽管它有着蛇的外表，但它有四肢且用双足站立。它的手臂和身体一样是绿色的，有三个手指。它的尾巴末端是一片大叶子，有着三个分叉。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="8.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                暖暖猪是以猪为原型的宝可梦。它身体主要呈橙色，而身体后端、面部的一部分和耳朵是黑色的。它鼻子前端的皮肤是黄色的。它有两只大眼睛，红色的猪鼻子。弹簧状的尾巴上还有一个红色的球状物。暖暖猪有短小的腿。暖暖猪可以轻巧地躲避敌人的攻击，从鼻子里射出火球来。如果感冒了喷出的将不是火焰而是乌黑的烟雾。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="9.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                水水獭是海獭类的宝可梦。它的头部和爪子都是白色，身体是蓝色。它的头上有两个深蓝色的尖状物，眼睛下面有类似于雀斑的黑点，还有一个褐色的椭圆形鼻子。它的腹部有贝壳状的扇贝贝，可以把它摘下来使用。水水獭腹部的扇贝贝成分和爪子相同，会用腹部的扇贝贝战斗。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="10.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                大剑鬼是四足蓝色海兽宝可梦。长长的白胡须从头部的口鼻处延伸，其头部背面有一个巨大的米黄色圆形有矛状尖刺，类似头盔的外壳尖锐地突出在前面。它的腹部被一个蓝灰色的贝壳状的甲壳覆盖，其四肢覆盖着米黄色分段的护腕状覆盖物，它会在战斗时使用由贝壳组成的看似前肢护腕，被称为足刃的剑。贝壳就像它身体的一部分。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="11.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                比克提尼是一种长得有点小,有些像老鼠的宝可梦。它巨大而又尖锐的耳朵构成了字母V的样子。比克提尼有着蓝色的大眼睛,占据了头部很多的空间。与身体不相衬的大脑袋使它的身体看起来要比正常的更小一些。它的身体颜色与奶油十分相近，耳朵顶部、头顶和四肢都是橙色。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="12.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                酷豹有着紫色的身躯，在背上的紫色皮毛还带有三角形状空心的黄色斑纹。酷豹有如猫一般的四根分别从嘴部延伸出去的须毛。它有着魅惑人的眼睛、娇媚的身躯、修长的腿以及镰刀似的巨大尾巴。酷豹是神出鬼没的宝可梦，平时大多过着悠闲的生活。它优雅的风格和花纹吸引着无数训练家。
+            </div>
+        </div><br><br>
+        <table border="1" align="center">
+            <tr style="text-align:center ; background-color: rgb(26, 179, 64); height: 20px;">
+                <td class="m">编号</td>
+                <td class="n">宝可梦名称</td>
+                <td class="n">属性</td>
+                <td class="m">HP</td>
+                <td class="m">攻击</td>
+                <td class="m">防御</td>
+                <td class="m">特攻</td>
+                <td class="m">特防</td>
+                <td class="m">速度</td>
+                <td class="m">共和</td>
+            </tr>
+            <tr>
+                <td class="m">#7</td>
+                <td class="n">藤藤蛇</td>
+                <td class="n">草</td>
+                <td class="m">45</td>
+                <td class="m">45</td>
+                <td class="m">55</td>
+                <td class="m">45</td>
+                <td class="m">55</td>
+                <td class="m">63</td>
+                <td class="m">308</td>
+            </tr>
+            <tr>
+                <td class="m">#8</td>
+                <td class="n">暖暖猪</td>
+                <td class="n">火</td>
+                <td class="m">65</td>
+                <td class="m">63</td>
+                <td class="m">45</td>
+                <td class="m">45</td>
+                <td class="m">45</td>
+                <td class="m">45</td>
+                <td class="m">308</td>
+            </tr>
+            <tr>
+                <td class="m">#9</td>
+                <td class="n">水水獭</td>
+                <td class="n">水</td>
+                <td class="m">55</td>
+                <td class="m">55</td>
+                <td class="m">45</td>
+                <td class="m">63</td>
+                <td class="m">45</td>
+                <td class="m">45</td>
+                <td class="m">308</td>
+            </tr>
+            <tr>
+                <td class="m">#10</td>
+                <td class="n">大剑鬼</td>
+                <td class="n">水</td>
+                <td class="m">95</td>
+                <td class="m">100</td>
+                <td class="m">85</td>
+                <td class="m">108</td>
+                <td class="m">70</td>
+                <td class="m">70</td>
+                <td class="m">528</td>
+            </tr>
+            <tr>
+                <td class="m">#11</td>
+                <td class="n">比克提尼</td>
+                <td class="n">超能力/火</td>
+                <td class="m">100</td>
+                <td class="m">100</td>
+                <td class="m">100</td>
+                <td class="m">100</td>
+                <td class="m">100</td>
+                <td class="m">100</td>
+                <td class="m">600</td>
+            </tr>
+            <tr>
+                <td class="m">#12</td>
+                <td class="n">酷豹</td>
+                <td class="n">恶</td>
+                <td class="m">64</td>
+                <td class="m">88</td>
+                <td class="m">50</td>
+                <td class="m">88</td>
+                <td class="m">50</td>
+                <td class="m">106</td>
+                <td class="m">446</td>
+            </tr>
+        </table>
+    </div>
+    <div class="guandu"><a class="dazi">神奥</a><br>
+        <div class="zhengti">
+            <img src="13.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                草苗龟的身体是草绿色的。它有黄色的眼睛和下颌。绿色的身躯上有壳，头上的咖啡色斑点上长了一棵幼苗。背上的咖啡色龟壳上面有深褐色的条纹和外框。草苗龟有著黄色的脚和小小的尾巴。草苗龟栖息在湖泊边沐浴着阳光，用全身进行光合作用制造氧气。阳光越是照耀，活力越是充沛。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="14.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                小火焰猴的皮毛以橙色为主，面部、外耳、腹部、手掌及脚掌则为浅黄色。小火焰猴有一双大耳朵，内耳呈红色。它的眼睛上方有半圈红色的花纹，胸口上有一个旋涡状的标记。它的屁股上燃烧着一团火焰，屁股上被火焰遮挡住的地方有着红色斑块。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="15.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                波加曼类似于企鹅，它的背和头顶都是深蓝色的，拥有一个黄色的喙。波加曼眼睛周围是白色，在眼睛中间还有一个浅蓝色的王冠状图形。它长长的绒毛能抵御寒冷。波加曼喜爱寒冷,栖息于北国的海岸线。它很擅长游泳,会为寻找食物会在海里潜水超过10分钟。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="16.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                帕奇利兹像一只松鼠，它的耳朵是蓝色的，下面延伸出了条纹，脸颊两侧有黄色的电气袋，有一道蓝色条纹一直从脑袋顶上经过背部到尾巴，末尾突出了三根尖状物。雌性帕奇利兹头部的条纹更短。帕奇利兹生活在树木上面，它会把储存了静电帕奇作响的毛发球和最喜欢吃的树果一起藏在树干的洞穴里。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="17.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                烈咬陆鲨外形酷似双髻鲨,全身底色深蓝,从下颌到腹部上半部分为红色,腹部下半部分为黄色。它头上长着两个突起物,鼻尖有一块倒五角星形的黄斑,嘴中长有锋利的牙齿,颈部两侧有3个鳃裂。它的双爪为白色单趾,双脚为三趾，上臂和大腿各有两根白色骨刺。烈咬陆鲨的翅膀长在前臂上，类似鲨鱼的胸鳍。如果它收拢身体，伸展翅膀，简直就是一架喷气式飞机。
+            </div>
+        </div>
+        <div class="zhengti">
+            <img src="18.webp" alt="aa" width="160px" height="160px">
+            <div class="gaishu">
+                路卡利欧长得像现实中的狗，容貌威风凛凛。一双手背上和胸前各有一根刺，上身瘦小，下身比较强壮。超级路卡利欧表面有更多黑色条纹，头部后面的毛发也变多了，皮肤颜色也变得更深，脚变成红色。身体的乳白色皮毛变得更长，大腿亦变得比较细。手背和脚掌上长出更多刺来。路卡利欧拥有侦测所有东西发出的波导的能力。
+            </div>
+        </div><br><br>
+        <table border="1" align="center">
+            <tr style="text-align:center ; background-color: rgb(26, 179, 64); height: 20px;">
+                <td class="m">编号</td>
+                <td class="n">宝可梦名称</td>
+                <td class="n">属性</td>
+                <td class="m">HP</td>
+                <td class="m">攻击</td>
+                <td class="m">防御</td>
+                <td class="m">特攻</td>
+                <td class="m">特防</td>
+                <td class="m">速度</td>
+                <td class="m">共和</td>
+            </tr>
+            <tr>
+                <td class="m">#13</td>
+                <td class="n">草苗龟</td>
+                <td class="n">草</td>
+                <td class="m">55</td>
+                <td class="m">68</td>
+                <td class="m">64</td>
+                <td class="m">45</td>
+                <td class="m">55</td>
+                <td class="m">31</td>
+                <td class="m">318</td>
+            </tr>
+            <tr>
+                <td class="m">#14</td>
+                <td class="n">小火焰猴</td>
+                <td class="n">火</td>
+                <td class="m">44</td>
+                <td class="m">58</td>
+                <td class="m">44</td>
+                <td class="m">58</td>
+                <td class="m">44</td>
+                <td class="m">61</td>
+                <td class="m">309</td>
+            </tr>
+            <tr>
+                <td class="m">#15</td>
+                <td class="n">波加曼</td>
+                <td class="n">水</td>
+                <td class="m">53</td>
+                <td class="m">51</td>
+                <td class="m">53</td>
+                <td class="m">61</td>
+                <td class="m">56</td>
+                <td class="m">40</td>
+                <td class="m">314</td>
+            </tr>
+            <tr>
+                <td class="m">#16</td>
+                <td class="n">帕奇利兹</td>
+                <td class="n">电</td>
+                <td class="m">60</td>
+                <td class="m">45</td>
+                <td class="m">70</td>
+                <td class="m">45</td>
+                <td class="m">90</td>
+                <td class="m">95</td>
+                <td class="m">405</td>
+            </tr>
+            <tr>
+                <td class="m">#17</td>
+                <td class="n">烈咬陆鲨</td>
+                <td class="n">龙/地面</td>
+                <td class="m">108</td>
+                <td class="m">130</td>
+                <td class="m">95</td>
+                <td class="m">80</td>
+                <td class="m">85</td>
+                <td class="m">102</td>
+                <td class="m">600</td>
+            </tr>
+            <tr>
+                <td class="m">#18</td>
+                <td class="n">路卡利欧</td>
+                <td class="n">格斗/钢</td>
+                <td class="m">70</td>
+                <td class="m">110</td>
+                <td class="m">70</td>
+                <td class="m">115</td>
+                <td class="m">70</td>
+                <td class="m">90</td>
+                <td class="m">525</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
