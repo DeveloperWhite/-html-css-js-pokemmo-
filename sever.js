@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const { exit } = require('process');
 
 const app = express();
 const PORT = 3000;
@@ -40,3 +41,11 @@ app.post('/register', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+// 如何运行该node.js后端服务器、
+// 首先安装nodejs
+// 验证是否安装，node -v ，npm -v
+// 然后在cmd中切换到nodejs文件所在指定路径，安装express模块，npm install express
+// 在vscode终端输入node sever.js即可 
+
+
